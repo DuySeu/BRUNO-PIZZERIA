@@ -1,0 +1,73 @@
+
+label {
+	float: left;
+	text-align: right;
+	width: 10em;
+	margin-right: 1em;
+}
+
+input {
+	width: 40%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="age"] {
+    box-shadow: 0 0 2px 2px lightblue inset;
+}
+
+.textinput {
+	margin: 10px;
+}
+
+.radioinput fieldset {
+	border: none;
+}
+
+.radioinput legend {
+	float: left;
+	text-align: right;
+	width: 9em;		
+	margin-right: 1em;
+}
+
+.radioinput input  {
+	width: 2em;		
+}
+
+.radioinput label  {
+	float: none;		
+	text-align: left;		
+}
+
+.button {
+    border: 0.1px solid black;
+	border-radius: 10px;
+	background-color: black;
+    color: white;
+	padding: 0.35em;
+}
+
+.buttoninput {
+	display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    box-sizing: border-box;
+	width: 40%;
+}
+
+.button:hover {
+	background-color: white;
+    color: black;
+}
+
+.hidden {
+	display: none;
+}
+
+.footer-order {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}

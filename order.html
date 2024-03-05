@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="css/style.css"
+            rel="stylesheet"
+            type="text/css"
+            media="screen and (min-device-width:481px)"
+        />
+        <link
+            href="css/order.css"
+            rel="stylesheet"
+            type="text/css"
+            media="screen and (min-device-width:481px)"
+        />
+        <script src="js/order.js"></script>
+        <title>Bruno Pizzeria</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="container">
+            <img
+                src="images/Logo for Brunos.png"
+                alt="Bruno’s Logo"
+                width="100"
+                height="100"
+            />
+
+            <!-- Navbar -->
+
+            <nav>
+                <a href="index.html">About</a>
+                <a href="registration.html">Register</a>
+                <a href="order.html">Order Now</a>
+                <a href="features.html">Features</a>
+            </nav>
+        </header>
+
+        <!-- Main content    -->
+
+        <main>
+            <form
+                id="regform"
+                method="post"
+                action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php"
+            >
+                <fieldset>
+                    <legend>Delivery Information</legend>
+                    <div class="radioinput">
+                        <label>Order method</label>
+                        <input
+                            type="radio"
+                            onclick="option(this);"
+                            name="take_order"
+                            id="delivery"
+                            value="delivery"
+                        />
+                        <label for="delivery">Delivery</label>
+                        <input
+                            type="radio"
+                            onclick="option(this);"
+                            name="take_order"
+                            id="pickup"
+                            value="pickup"
+                        />
+                        <label for="pickup">Pick-up</label>
+                    </div>
+                    <div id="pickup_address" class="pickup_address hidden">
+                        <div class="textinput">
+                            <label>Address</label>
+                            <input
+                                id="delivery_address"
+                                type="text"
+                                name="delivery_address"
+                            />
+                        </div>
+                        <div class="radioinput">
+                            <label
+                                >Billing address same as delivery address</label
+                            >
+                            <input
+                                id="same"
+                                type="checkbox"
+                                name="same_as_delivery_address"
+                                value="yes"
+                                onclick="copy(event)"
+                            />
+                        </div>
+                        <div class="textinput">
+                            <label>Billing address</label>
+                            <input
+                                id="billing_address"
+                                type="text"
+                                name="billing_address"
+                            />
+                        </div>
+                    </div>
+                    <div class="textinput">
+                        <label>Contact number</label>
+                        <input id="contact" type="number" name="contact" />
+                    </div>
+                    <div class="textinput">
+                        <label>Email (for receipt)</label>
+                        <input type="email" id="email" name="email" />
+                    </div>
+                    <div class="textinput">
+                        <label>Post code</label>
+                        <input type="number" id="postcode" name="postcode" />
+                    </div>
+                    <div class="radioinput">
+                        <span>Payment method</span>
+                        <input
+                            type="radio"
+                            onclick="option(this);"
+                            name="pay"
+                            id="paypickup"
+                            value="on_pick-up"
+                        />
+                        <label for="paypickup">Pay on pickup</label>
+                        <input
+                            type="radio"
+                            onclick="option(this);"
+                            name="pay"
+                            id="payonline"
+                            value="online"
+                        />
+                        <label for="payonline">Pay online</label>
+                    </div>
+                </fieldset>
+                <div id="online_payment" class="online_payment hidden">
+                    <fieldset>
+                        <legend>Credit card information</legend>
+                        <div class="radioinput">
+                            <label>Choose one of the following types</label>
+                            <input
+                                type="radio"
+                                id="visa"
+                                name="card_type"
+                                value="Visa"
+                            />
+                            <label>Visa</label>
+                            <input
+                                type="radio"
+                                id="master"
+                                name="card_type"
+                                value="Mastercard"
+                            />
+                            <label>Mastercard</label>
+                            <input type ="radio" id="american" name="card_type" value="American_Express" />
+                            <label>American Express</label>
+                        </div>
+                        <div class="textinput">
+                            <label>Credit card number</label>
+                            <input
+                                id="creditnumber"
+                                type="number"
+                                name="credit_number"
+                            />
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- Submit -->
+                <div class="buttoninput">
+                    <input class="button" type="reset" value="Reset" />
+                    <input class="button" type="submit" value="Register" />
+                </div>
+            </form>
+        </main>
+
+        <!-- Footer -->
+
+        <footer id="footer" class="footer-fixed">
+            <!-- Contact -->
+
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <h3 class="title">Information</h3>
+                    <p>About</p>
+                    <p>Register</p>
+                    <p>Order Now</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="title">Account</h3>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="footer-bottom">
+                <h5 class="title">
+                    © 2022 BRUNO'S PIZZERIA&GRILL LLP. ALL RIGHTS RESERVED.
+                </h5>
+                <h5 class="title">WEB DEVELOPMENT BY NGUYEN QUOC DUY</h5>
+            </div>
+        </footer>
+    </body>
+</html>

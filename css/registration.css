@@ -1,0 +1,75 @@
+
+form {
+	width: 45em;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    min-width: 130px;
+    text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="age"] {
+	width: 50%;
+    box-shadow: 0 0 2px 2px lightblue inset;
+}
+
+.textinput {
+    margin: 10px;
+}
+
+.radioinput {
+    margin: 10px;
+}
+
+.button {
+    border: 0.1px solid black;
+	border-radius: 10px;
+	background-color: black;
+    color: white;
+	padding: 0.35em;
+    width: 50%;
+}
+
+.buttoninput {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.button:hover {
+	background-color: white;
+    color: black;
+}
+
+.window {
+	display: none; 
+    z-index: 2; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    margin-top: -5em; 
+    margin-left: -11em; 
+    background-color: white; 
+    border-radius: 20px;
+    padding: 5px;
+    width: 22em;
+    height: 10em;
+}
+
+#scrnOverlay {
+    visibility: hidden;
+    z-index: 1; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    opacity: 0.5;
+}

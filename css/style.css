@@ -1,0 +1,153 @@
+/*General CSS */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #aaa 2px 2px 2px;
+}
+
+h5 {
+    width: auto;
+    padding: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.ol {
+    width: 80%;
+}
+
+.features:hover {
+    color: lightblue;
+    padding: 0;
+    background-color: white;
+}
+
+/* Header CSS */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    margin: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px none black;
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+.content-slider img {
+    width: 100%;
+}
+
+/* About CSS */
+
+.about-us-section #about-us {
+    background-color: lightgrey;
+    padding: 1.5em;
+    margin-top: 1em;
+    border-radius: 20px;
+}
+
+.about-us-section #about-us .about-us__title {
+    margin-top: 0;
+}
+
+.about-us-section .wrapper p {
+    margin: 0;
+}
+
+.about-us-section .wrapper:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+/* Menu CSS*/
+
+#menu-section .menu-item__img {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+#menu-section .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-items .product-sale {
+    width: calc(100% / 3);
+}
+
+/* Footer CSS*/
+
+#footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: 0;
+    max-height: auto;
+    padding: 0;
+    border: none;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+#footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-top .footer-contact {
+    width: calc(100% / 3);
+}
+
+.footer-contact {
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
